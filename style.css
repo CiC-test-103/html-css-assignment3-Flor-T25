@@ -48,6 +48,175 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+/* Body and container*/
+body {
+  background-color: var(--clr-stone100);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fs-base);
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-regular);
+  color: var(--clr-stone600);
+  padding: 7rem 0;
+}
+.sor_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--clr-white);
+  border-radius: 20px;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Font Styles */
+h1 {
+  font-family: var(--fs-accent);
+  font-size: var(--font-header);
+  font-weight: var(--fw-regular);
+  color: var(--clr-stone900);
+  padding-bottom: 0.5rem;
+  white-space: normal;
+}
+h2 {
+  font-family: var(--fs-accent);
+  font-size: var(--font-sub-header);
+  font-weight: var(--fw-regular);
+  color: var(--clr-brown800);
+  padding-bottom: 1rem;
+}
+h3 {
+  font-family: var(--fs-base);
+  font-size: var(--font-sub-subheader);
+  font-weight: var(--fw-bold);
+  color: var(--clr-rose800);
+  padding-bottom: 1rem;
+}
+span {
+  font-weight: var(--fw-black);
+
+}
+
+/* Styles Section*/
+.sor_image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sor_prep {
+  background-color: var(--clr-rose50);
+  padding: 25px;
+  border-radius: 10px;
+}
+.sor_prep ul, .sor_ingredients ul {
+  list-style: none;
+  padding-left: 8px;
+  margin: 0;
+}
+.sor_prep li, .sor_ingredients li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.sor_prep li::before {
+  color: var(--clr-rose800);
+}
+.sor_prep li::before, .sor_ingredients li::before {
+  content: '•';
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-black);
+  padding-right: 28px;
+}
+.sor_ingredients li::before {
+  color: var(--clr-brown800);
+}
+.sor_ingredients, .sor_instructions {
+  border-bottom: 1px solid var(--clr-stone150);
+  padding-bottom: 1.5rem;
+}
+
+.sor_instructions ol {
+  padding-left: 25px;
+  margin: 0;
+}
+.sor_instructions li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+}
+.sor_instructions li::marker {
+  font-family: var(--fs-base);
+  color: var(--clr-brown800);
+  font-weight: var(--fw-black);
+}
+
+.sor_nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+.sor_nutrition td {
+  border-bottom: 1px solid var(--clr-stone150);
+  padding: 8px 0;
+}
+.sor_nutrition tr td:first-child {
+  padding-left: 35px;
+  padding-right: 0;
+}
+.sor_nutrition tr td:last-child {
+  font-weight: var(--fw-black);
+  color: var(--clr-brown800);
+  padding-right: 30px;
+}
+.sor_nutrition tr:last-child td{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Mobile Screen Styles Section */
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .sor_container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .sor_image {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+  .sor_header {
+    margin: 0 30px;
+    padding: 0;
+  }
+  .sor_header h1 {
+    font-size: var(--font-header-mobile);
+    line-height: 1;
+    text-wrap: wrap;
+  }
+  .sor_header p {
+    padding-top: 20px;
+    text-wrap: wrap;
+  }
+  .sor_prep {
+    margin: 0 30px;
+    padding: 25px;
+  }
+  .sor_ingredients, .sor_instructions, .sor_nutrition {
+    margin: 0 32px;
+    padding: 0 0 1.5rem 0;
+  }
+}
+
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
