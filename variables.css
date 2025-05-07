@@ -23,7 +23,7 @@
 :root {
   /* Layout */
   --width-mobile: 375px;
-  --width-desktop: 1440;
+  --width-desktop: 1440px;
 
   /* Colours */
   --clr-stone100: hsl(30, 54%, 90%);
@@ -36,8 +36,10 @@
 
   /* Typography */
   --font-paragraph: 16px;
-  --font-header: 32px;
-  --font-sub-header: 24px;
+  --font-header: 40px;
+  --font-header-mobile: 34px;
+  --font-sub-header: 30px;
+  --font-sub-subheader: 20px;
   --fw-regular: 400;
   --fw-bold: 600;
   --fw-black: 700;
